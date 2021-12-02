@@ -1,0 +1,344 @@
+.tab3Page {
+    height: 100vh;
+}
+.tab3 {
+    z-index: 1;
+}
+.homePageTitle {
+    margin-top: 0px;
+    font-size: 60px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.searchButton {
+    margin: 0px;
+    width: 25%;
+    text-align: center;
+    align-items: center;
+    height: 44px;
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-width: 0px;
+    display: inline-block;
+    color: black;
+    margin-right: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    font-size: 20px;
+} 
+.foodListShow {
+    display: none;
+}
+.learnMore {
+    text-align: center;
+    align-items: center;
+}
+.moreInfoOnSearch {
+    --background: aqua;
+    color: black;
+}
+.bottomRow {
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    width: 100vw;
+}
+.ad {
+    display: block;
+}
+.reviewButton {
+    display: block;
+    height: 40px;
+    bottom: 0;
+    width: 200px;
+    margin-top: 40px; 
+}
+.popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 30vh;
+    margin-bottom: 50vh;
+    height: 30vh;
+    width: 80vw;
+    border-radius: 10px;
+    background:rgba(255,255,255,0.80);
+    z-index: 2;
+}
+.closeButton {
+    background: transparent;
+    color: black;
+    font-size: 30px;
+    margin-top: 2%;
+    margin-left: 95%;
+}
+
+
+
+.searchTitle {
+    text-align: center;
+}
+
+
+
+
+
+.main2 {
+    background-color: black;
+}
+
+.search {
+    margin: 0px;
+    margin-left: 18%;
+    width: 40%;
+    text-align: left;
+    align-items: center;
+    background: white;
+    height: 44px;
+    border-radius: 8px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-width: 0px;
+    display: inline-block;
+    color: black;
+    margin-right: 0px;
+    padding: 0px;
+    padding-left: 5px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+
+
+.searchBar{
+    width: 100px;
+    text-align: left;
+    align-items: left;
+    background: purple;
+}
+
+.hello {
+    background-color: purple;
+    padding: 12px;
+}
+
+.foodReturn {
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.foodReturn h1 {
+    font-size: 80px;
+    font-family: fantasy;
+}
+
+
+
+
+
+
+
+
+/************************************* Profile Page ***********************************/
+
+.createUserPage {
+    margin: 0px;
+    padding: 0px;
+    background-color: #5CDB95;
+    height: 96vh;
+    width: 100vw;
+    overflow: scroll;
+}
+
+.createUserH3 {
+    margin: 0px;
+    padding: 40px;
+    text-align: center;
+    font-family: bold, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.profileDiv {
+    display: block;
+    background: white;
+    margin-left: 10vw;
+    width: 230vh;
+    height: 25vh;
+    margin-bottom: 2vh;
+}
+.reviewPost {
+    display: block;
+    background: white;
+    margin-left: 10vw;
+    width: 80vw;
+    height: 25vh;
+    margin-bottom: 2vh;
+}
+
+.createUserInput {
+    margin: 0px;
+    margin-left: 5%;
+    width: 90%;
+    text-align: left;
+    align-items: center;
+    background: white;
+    height: 44px;
+    border-radius: 8px;
+    border-width: 0px;
+    display: inline-block;
+    color: black;
+    margin-right: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.createUserInput:focus {
+    outline: none;
+}
+.createUserButtonDiv {
+    text-align: center;
+
+}
+.createUserButton {
+        margin: 0px;
+        width: 50%;
+        text-align: center;
+        align-items: center;
+        height: 55px;
+        border-radius: 8px;
+        border-width: 0px;
+        display: inline-block;
+        color: black;
+        padding: 0px;
+        font-size: 20px;
+        margin-bottom: 1vh;
+}
+
+/************************************* Edit Profile Page ***********************************/
+
+.editUserPage {
+    margin: 0px;
+    padding: 0px;
+    background-color: #5CDB95;
+    height: 1000px;
+    overflow: scroll;
+}
+
+.editUserH3 {
+    margin: 0px;
+    padding: 40px;
+    text-align: center;
+    font-family: bold, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.editUserInput {
+    margin: 0px;
+    margin-left: 5%;
+    width: 90%;
+    text-align: left;
+    align-items: center;
+    background: white;
+    height: 44px;
+    border-radius: 8px;
+    border-width: 0px;
+    display: inline-block;
+    color: black;
+    margin-right: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.editUserInput:focus {
+    outline: none;
+}
+.editUserButtonDiv {
+    text-align: center;
+
+}
+.editUserButton {
+        margin: 0px;
+        width: 50%;
+        text-align: center;
+        align-items: center;
+        height: 55px;
+        border-radius: 8px;
+        border-width: 0px;
+        display: inline-block;
+        color: black;
+        margin-right: 0px;
+        padding: 0px;
+        padding-left: 10px;
+        font-size: 20px;
+}
+
+/************************************* Ad Review PopUp and Review Component ***********************************/
+
+.ratingPage {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.stars {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.stars button {
+    background: transparent;
+    color: black;
+    font-size: 5.0em;
+    width: 10%;
+    margin-left: 8%;
+}
+
+.reviewComments {
+    display: block;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+    border-radius: 8px;
+    border: 0px;
+}
+.submitButton {
+    display: block;
+    align-items: center;
+    width: 100%;
+}
+
+.submitButton button {
+    display: block;
+    width: 20%;
+    margin-left: 40%;
+}
+.postSubmit {
+    display: none;
+    color: black;
+    text-align:center;
+    font-size: 24px;
+}
+
+
+
+
+

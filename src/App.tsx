@@ -40,6 +40,8 @@ import { EditProfilePage } from './pages/EditProfile.js';
 /* Theme variables */
 import "./theme/variables.css";
 import { useEffect } from "react";
+import './App.css';
+
 
 const App: React.FC = () => {
   const { handleRedirectCallback } = useAuth0();
