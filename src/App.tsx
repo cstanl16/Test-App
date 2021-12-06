@@ -1,6 +1,6 @@
 import { Redirect, Route } from "react-router-dom";
 import { IonApp, IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs,} from '@ionic/react';
-import { searchOutline, personOutline} from 'ionicons/icons';
+import { searchOutline, personOutline, triangle} from 'ionicons/icons';
 import { IonReactRouter } from "@ionic/react-router";
 import { App as CapApp } from "@capacitor/app";
 import { Browser } from "@capacitor/browser";
@@ -71,14 +71,9 @@ const App: React.FC = () => {
                 <Tab3 />
               </Route>
 
-              <Route exact path="/home">
-                <Home />
-              </Route>
-
               <Route exact path="/cat">
                 <Cat />
               </Route>
-
 
               <Route exact path="/foodList">
                 <FoodList/>
@@ -118,18 +113,13 @@ const App: React.FC = () => {
             <IonTabBar slot="bottom">
               <IonTabButton tab="tab3" href="/tab3">
                 <IonIcon icon={searchOutline} />
-                <IonLabel>Home</IonLabel>
+                <IonLabel>Tab3</IonLabel>
               </IonTabButton>
 
               <IonTabButton tab="profile" href="/profile">
                 <IonIcon icon={personOutline} />
                 <IonLabel>Profile</IonLabel>
               </IonTabButton>
-
-              {/* <IonTabButton tab="profile" href="/profile">
-                <IonIcon icon={createOutline} />
-                <IonLabel>Create</IonLabel>
-              </IonTabButton> */}
 
             </IonTabBar>
 
