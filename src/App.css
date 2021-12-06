@@ -1,5 +1,5 @@
 .tab3Page {
-    height: 90vh;
+    height: 91vh;
     overflow-y: scroll;
 }
 .tab3 {
@@ -306,7 +306,7 @@
 .stars button {
     background: transparent;
     color: black;
-    font-size: 5.0em;
+    font-size: 1.2em;
     width: 10%;
     margin-left: 8%;
 }
@@ -329,8 +329,10 @@
 
 .submitButton button {
     display: block;
-    width: 20%;
-    margin-left: 40%;
+    width: 50%;
+    height: 30px;
+    margin-left: 25%;
+    font-size: 25px;
 }
 .postSubmit {
     display: none;
