@@ -1,5 +1,6 @@
 .tab3Page {
-    height: 100vh;
+    height: 90vh;
+    overflow-y: scroll;
 }
 .tab3 {
     z-index: 1;
@@ -41,7 +42,7 @@
 }
 .bottomRow {
     display: block;
-    position: absolute;
+    position: relative;
     bottom: -4px;
     width: 100vw;
 }
