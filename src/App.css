@@ -176,8 +176,8 @@
     display: block;
     background: white;
     margin-left: 10vw;
-    width: 230vh;
-    height: 25vh;
+    width: 80vw;
+    height: 20vh;
     margin-bottom: 2vh;
 }
 .reviewPost {
@@ -185,7 +185,7 @@
     background: white;
     margin-left: 10vw;
     width: 80vw;
-    height: 25vh;
+    height: 20vh;
     margin-bottom: 2vh;
 }
 
@@ -196,8 +196,8 @@
     text-align: left;
     align-items: center;
     background: white;
-    height: 44px;
-    border-radius: 8px;
+    height: 30px;
+    border-radius: 0px;
     border-width: 0px;
     display: inline-block;
     color: black;
