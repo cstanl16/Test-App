@@ -46,7 +46,9 @@ export const Food = (props) => {
     else if (props.food.foodSafe !== "No" || props.food.foodSafe !== "Yes") {
         return(
             <div className="foodReturn">
-                <h1>help</h1>
+                <h1>Nothing was found</h1>
+                <p>Please try searching for something else!</p>
+                <p>Or click the Help me learn more button below.</p>
             </div>
         );
     }
@@ -120,11 +122,68 @@ export default class FoodList extends Component {
 
     filterFoodList() {  
         const name = this.props.foodName;
-        this.setState({
-            foodItems: this.state.foodItems.filter(foodItems => foodItems.foodName === (`${name}`) ) 
-        });
+        var test = name;
+        const length = test.length;
+        console.log(test.length);
+        var hasName = false;
         
+        for (let i = 0; i < this.state.foodItems.length; i++) {
+        
+           if ( this.state.foodItems[i].foodName === test) { //ADD IN TO LOWERCASE
+                hasName = true;
+                this.setState({
+                    foodItems: this.state.foodItems.filter(foodItems => foodItems.foodName === (`${test}`) ) 
+                });
+                break;
+           }
+        }
+        if (hasName === false) {
 
+            if (this.state.foodItems.length > 1) {
+
+                if (test.charAt(length - 1) === "s") {
+                    test = test.substring(0, length - 1);
+                    for (let i = 0; i < this.state.foodItems.length; i++) {
+        
+                        if ( this.state.foodItems[i].foodName === test) {
+                             hasName = true;
+                             this.setState({
+                                 foodItems: this.state.foodItems.filter(foodItems => foodItems.foodName === (`${test}`) ) 
+                             });
+                             break;
+                        }
+                    }
+                }
+
+                else if (test.charAt(length - 1) !== "s") {
+                    test = test + "s";
+
+                    for (let i = 0; i < this.state.foodItems.length; i++) {
+        
+                        if ( this.state.foodItems[i].foodName === test) {
+                             hasName = true;
+                             this.setState({
+                                 foodItems: this.state.foodItems.filter(foodItems => foodItems.foodName === (`${test}`) ) 
+                             });
+                             break;
+                        }
+                    }
+                }
+
+            }
+            if (name.length < 1) {
+                this.setState({
+                    foodItems: this.state.foodItems.filter(foodItems => foodItems.foodName === "" ) 
+                });
+            }
+            if (this.state.foodItems.length > 1 & name.length > 1) {
+                this.setState({
+                    foodItems: this.state.foodItems.filter(foodItems => foodItems.foodName === "nothing" ) 
+                });
+            }
+
+        }
+       
     }
 
     // 4 takes 
