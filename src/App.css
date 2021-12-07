@@ -144,7 +144,7 @@
 
 .foodReturn h1 {
     font-size: 80px;
-    font-family: fantasy;
+    font-family: 'Times';
 }
 
 
@@ -320,6 +320,7 @@
     padding: 20px;
     border-radius: 8px;
     border: 0px;
+    font-size: 24px;
 }
 .submitButton {
     display: block;
@@ -333,6 +334,7 @@
     height: 30px;
     margin-left: 25%;
     font-size: 25px;
+    border-radius: 6px;
 }
 .postSubmit {
     display: none;
