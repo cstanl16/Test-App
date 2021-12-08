@@ -81,15 +81,15 @@
     margin-left: 95%;
 }
 
-
-
 .searchTitle {
     text-align: center;
 }
 
-
-
-
+.horizontalBreak {
+    color:white;
+    background-color: white;
+    height: 3;
+}
 
 .main2 {
     background-color: black;

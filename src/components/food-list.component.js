@@ -31,7 +31,10 @@ export const Food = (props) => {
             <div className="foodReturn">
                 <h1>No!</h1>
                 <p>{props.dogName} can't eat {props.food.foodName}</p>
+                <hr className="horizontalBreak"/>
+                <p>Similar foods which are safe:</p>
                 <SimilarFoods foodType={props.food.foodType}/> 
+                <hr className="horizontalBreak"/>
             </div>
         ); 
     }
@@ -42,7 +45,10 @@ export const Food = (props) => {
                 <h1>No!</h1>
                 <p>{props.dogName} can't eat {props.food.foodName},</p>
                 <p>{props.food.foodNotes}</p>
-                <SimilarFoods foodType={props.food.foodType}/> 
+                <hr className="horizontalBreak"/>
+                <p><b>Similar foods which are safe:</b></p>
+                <SimilarFoods foodType={props.food.foodType}/>
+                <hr className="horizontalBreak"/> 
             </div>
         ); 
     }

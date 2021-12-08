@@ -6,7 +6,7 @@ export const Food = (props) => {
     if ((props.food.foodSafe === "Yes" && props.food.foodSafe === '') || (props.food.foodSafe === "yes"  && props.food.foodSafe === '')) {
         return(
             <div className="foodReturn2">
-                <p>{props.food.foodName}</p>
+                <h2>{props.food.foodName}</h2>
             </div>
         );
     }
@@ -14,7 +14,7 @@ export const Food = (props) => {
     else if ((props.food.foodSafe === "Yes" && props.food.foodSafe !== '') || (props.food.foodSafe === "yes"  && props.food.foodSafe !== '')) {
         return(
             <div className="foodReturn">
-                <p>{props.food.foodName}</p>
+                <h2>{props.food.foodName}</h2>
             </div>
         );
     }
