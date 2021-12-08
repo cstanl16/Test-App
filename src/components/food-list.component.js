@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Auth0Context } from '@auth0/auth0-react';
+import SimilarFoods from './SimilarFoods.component';
 
  // 7 food is exported after if statement to see what it should return
 
 export const Food = (props) => {
     
-    if ((props.food.foodSafe === "Yes" && props.food.foodSafe === '') || (props.food.foodSafe === "no"  && props.food.foodSafe === '')) {
+    if ((props.food.foodSafe === "Yes" && props.food.foodNotes === '') || (props.food.foodSafe === "yes"  && props.food.foodNotes === '')) {
         return(
             <div className="foodReturn">
                 <h1>Yes!</h1>
@@ -15,7 +16,7 @@ export const Food = (props) => {
         );
     }
 
-    else if ((props.food.foodSafe === "Yes" && props.food.foodSafe !== '') || (props.food.foodSafe === "no"  && props.food.foodSafe !== '')) {
+    else if ((props.food.foodSafe === "Yes" && props.food.foodNotes !== '') || (props.food.foodSafe === "yes"  && props.food.foodNotes !== '')) {
         return(
             <div className="foodReturn">
                 <h1>Yes!</h1>
@@ -25,16 +26,17 @@ export const Food = (props) => {
         );
     }
 
-    else if ((props.food.foodSafe === "No" && props.food.foodSafe === '') || (props.food.foodSafe === "no"  && props.food.foodSafe === '')) {
+    else if ((props.food.foodSafe === "No" && props.food.foodNotes === '') || (props.food.foodSafe === "no"  && props.food.foodNotes === '')) {
         return(
             <div className="foodReturn">
                 <h1>No!</h1>
                 <p>{props.dogName} can't eat {props.food.foodName}</p>
+                <SimilarFoods foodType={props.food.foodType}/> 
             </div>
         ); 
     }
 
-    else if  ((props.food.foodSafe === "No" && props.food.foodSafe !== '') || (props.food.foodSafe === "no"  && props.food.foodSafe !== '')) {
+    else if  ((props.food.foodSafe === "No" && props.food.foodNotes !== '') || (props.food.foodSafe === "no"  && props.food.foodNotes !== '')) {
         return(
             <div className="foodReturn">
                 <h1>No!</h1>
